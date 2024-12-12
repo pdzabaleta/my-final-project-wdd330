@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "name": "Garden Trowel",
+      "category": "Tools",
+      "price": 12.99,
+      "description": "Durable stainless steel trowel for all your gardening needs.",
+      "stock": 50,
+      "image": "images/garden_trowel.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Potting Soil 20L",
+      "category": "Soil",
+      "price": 8.49,
+      "description": "Nutrient-rich potting soil for healthy plant growth.",
+      "stock": 100,
+      "image": "images/potting_soil.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rose Plant",
+      "category": "Plants",
+      "price": 15.99,
+      "description": "Beautiful blooming rose plant for your garden.",
+      "stock": 30,
+      "image": "images/rose_plant.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Gardening Gloves",
+      "category": "Accessories",
+      "price": 6.99,
+      "description": "Comfortable and durable gloves for gardening.",
+      "stock": 75,
+      "image": "images/gardening_gloves.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Herb Seed Kit",
+      "category": "Seeds",
+      "price": 9.99,
+      "description": "Grow your own herbs with this easy-to-use seed kit.",
+      "stock": 40,
+      "image": "images/herb_seed_kit.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Garden Hose 50ft",
+      "category": "Tools",
+      "price": 24.99,
+      "description": "Flexible and durable garden hose for watering.",
+      "stock": 20,
+      "image": "images/garden_hose.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Tomato Plant",
+      "category": "Plants",
+      "price": 4.99,
+      "description": "High-yield tomato plant for your home garden.",
+      "stock": 60,
+      "image": "images/tomato_plant.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Compost Bin",
+      "category": "Accessories",
+      "price": 49.99,
+      "description": "Eco-friendly compost bin for garden waste.",
+      "stock": 15,
+      "image": "images/compost_bin.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Sunflower Seeds",
+      "category": "Seeds",
+      "price": 3.49,
+      "description": "Pack of sunflower seeds to brighten your garden.",
+      "stock": 90,
+      "image": "images/sunflower_seeds.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Garden Sprayer",
+      "category": "Tools",
+      "price": 18.99,
+      "description": "Handheld sprayer for pesticides and fertilizers.",
+      "stock": 25,
+      "image": "images/garden_sprayer.jpg"
+    }
+  ]
+  

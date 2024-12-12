@@ -4,6 +4,86 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(175, 18, 18);
+}
+.search-wrapper {
+    width: 75%;
+    padding-left: 10px;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+}
+.absolute-search  {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px !important;
+    color: #555;
+    cursor: pointer;
+
+}
+.search-wrapper input:focus {
+    outline: none;  /* Elimina el borde por defecto */
+}
+#search {
+    width: 90%;
+    border-radius: 30px;
+    border: none;
+    padding-left: 30px;
+    height:35px;
+}
+
+.user {
+    display: flex; /* Alinea el icono y el texto en línea */
+    flex-direction: row; /* Hace que los elementos dentro de .user estén apilados verticalmente */
+    align-items: center; /* Alinea todos los elementos horizontalmente al centro */
+    font-size: 16px; /* Tamaño de texto */
+    color: #333; /* Color del texto */
+    width: 10%;
+    
+}
+.text-user {
+    /* background-color: #f4f4f4; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+.user i {
+    font-size: 30px; /* Tamaño del icono */
+    color: #ffffff; /* Color del icono */
+    cursor: pointer;
+
+}
+
+.hello, .sign-in {
+    font-weight: bold; /* Aplica negrita a los textos */
+    color: white;
+}
+
+.hello {
+    font-weight: bold;
+}
+
+.sign-in {
+    font-weight: normal;
+    text-decoration: underline;
+}
+.cart {
+    width: 5%;
+    align-content: center;
+}
+.cart i{
+    color: white;
+    font-size: 30px; /* Tamaño del icono */
+    cursor: pointer;
+
+}
 .top-bar {
     background-color: #ffcc00;
     color: #333;
@@ -11,11 +91,22 @@ body {
     padding: 5px 0;
 }
 .logo {
-    background-color: #ff6600;
-    color: white;
+    width: 10%;
     text-align: center;
-    padding: 10px 0;
+    padding: 0 auto;
 }
+.logo h1 {
+    font-family: 'Georgia', 'Times New Roman', serif;  /* Elegante, serif */
+    font-size: 3rem;  /* Tamaño grande */
+    font-weight: bold;  /* Hacerlo más visible */
+    color: #ffffff;  /* Color oscuro */
+    letter-spacing: 2px;  /* Espacio entre las letras */
+    text-transform: uppercase;  /* Hacer el texto en mayúsculas */
+    text-align: center;  /* Centrarlo */
+    cursor: pointer;
+
+}
+
 nav {
     display: flex;
     justify-content: space-around;
