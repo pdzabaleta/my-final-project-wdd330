@@ -14,7 +14,17 @@ header {
     padding-left: 10px;
     align-content: center;
     justify-items: center;
-    
+    position: relative;
+}
+.absolute-search  {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px !important;
+    color: #555;
+    cursor: pointer;
+
 }
 .search-wrapper input:focus {
     outline: none;  /* Elimina el borde por defecto */
@@ -23,7 +33,7 @@ header {
     width: 90%;
     border-radius: 30px;
     border: none;
-    padding-left: 10px;
+    padding-left: 30px;
     height:35px;
 }
 
@@ -34,16 +44,21 @@ header {
     font-size: 16px; /* Tamaño de texto */
     color: #333; /* Color del texto */
     width: 10%;
+    
 }
 .text-user {
     /* background-color: #f4f4f4; */
     display: flex;
     flex-direction: column;
     margin-left: 5px;
+    cursor: pointer;
+
 }
 .user i {
     font-size: 30px; /* Tamaño del icono */
     color: #ffffff; /* Color del icono */
+    cursor: pointer;
+
 }
 
 .hello, .sign-in {
@@ -66,6 +81,8 @@ header {
 .cart i{
     color: white;
     font-size: 30px; /* Tamaño del icono */
+    cursor: pointer;
+
 }
 .top-bar {
     background-color: #ffcc00;
@@ -86,6 +103,8 @@ header {
     letter-spacing: 2px;  /* Espacio entre las letras */
     text-transform: uppercase;  /* Hacer el texto en mayúsculas */
     text-align: center;  /* Centrarlo */
+    cursor: pointer;
+
 }
 
 nav {
