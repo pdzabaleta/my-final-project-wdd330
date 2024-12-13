@@ -14,17 +14,20 @@
   }
 
   // Función para obtener datos del archivo JSON
-  export async function fetchProductsData() {
-    try {
-      const response = await fetch('../data/products.json');
-      if (!response.ok) {
-        throw new Error("Failed to fetch products data");
-      }
-      return await response.json();
-    } catch (error) {
-      console.error("Error fetching products data:", error);
+// Función para obtener datos de productos desde un archivo JSON
+export async function fetchProductsData() {
+  try {
+    const response = await fetch('/data/products.json');
+    if (!response.ok) {
+      throw new Error(`Failed to fetch products: ${response.statusText}`);
     }
+    return await response.json();
+  } catch (error) {
+    console.error(error);
+    return [];
   }
+}
+
 
   // Función para renderizar contenido con una plantilla
   export function renderWithTemplate(templateFn, parentElement, data, callback) {

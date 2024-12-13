@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    padding-bottom: 60px;
 }
 header {
     display: flex;
@@ -153,4 +154,195 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+/* ///////////////////////////////////////////////////////////////// */
+/* Barra superior */
+.top-bar {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Botones de categorías */
+.category-button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.category-button:hover {
+    background-color: #218838;
+}
+
+/* Lista de categorías centrada */
+#categories {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Tarjetas de productos (utilizando Grid) */
+#products-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-areas: 
+      "title title title" /* El título ocupa toda la primera fila */
+      "product1 product2 product3" /* Las primeras 3 tarjetas ocupan la siguiente fila */
+      "product4 product5 product6"; /* Continuación de las tarjetas */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Centrar el título de los productos */
+#products-list-title {
+    grid-area: title;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: white; /* Fondo blanco para las tarjetas */
+}
+
+/* Efecto hover sobre las tarjetas de productos */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de la imagen dentro de la tarjeta */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilo del botón en las tarjetas */
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover sobre el botón */
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo principal del contenido */
+#main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalles del producto */
+#product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#product-details h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+#product-details p {
+    color: #666;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#product-details .price {
+    font-size: 1.8em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Reseñas del producto */
+#product-details .reviews {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#product-details .reviews ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#product-details .reviews li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#product-details .reviews strong {
+    color: #333;
+}
+
+#product-details .reviews span {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* Botón de compra */
+#product-details .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+#product-details .btn:hover {
+    background-color: #45a049;
+}
+
+/* Botón de regreso */
+#product-details .back-button {
+    background-color: #888;
+    text-align: center;
+}
+
+#product-details .back-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
 }
