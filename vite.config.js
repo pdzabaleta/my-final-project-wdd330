@@ -13,9 +13,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html', // Archivo principal en el directorio root (src/index.html)
-        cart: 'pages/cart.html', // Otro archivo HTML dentro de pages/
-        productDetails: 'pages/product-details.html', // Otro archivo dentro de pages/
-        search: 'pages/search.html', // Otro archivo dentro de pages/
+        cart: './pages/cart.html', // Otro archivo HTML dentro de pages/
+        productDetails: './pages/product-details.html', // Otro archivo dentro de pages/
+        search: './pages/search.html', // Otro archivo dentro de pages/
       },
     },
   },
