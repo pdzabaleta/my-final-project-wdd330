@@ -12,7 +12,7 @@ async function setupHeader() {
 
   if (logo) {
     logo.addEventListener('click', () => {
-      window.location.href = '/index.html';
+      window.location.href = '/src/index.html';
   });
   }
   if (searchInput) {
@@ -26,9 +26,9 @@ async function setupHeader() {
 
           if (results) {
             localStorage.setItem('searchResults', JSON.stringify(results));
-            window.location.href = `/pages/search.html`;
+            window.location.href = `/src/pages/search.html`;
           } else {
-            window.location.href = `/pages/search.html?results=not_found`;
+            window.location.href = `/src/pages/search.html?results=not_found`;
           }
         } catch (error) {
           alert('There was a problem with the search. Please try again.');
@@ -51,7 +51,7 @@ async function setupHeader() {
   // Eventos para navegación (íconos de cuenta y carrito)
   if (accountIcon) {
     accountIcon.addEventListener('click', () => {
-      window.location.href = '/pages/product-details.html';
+      window.location.href = '/src/pages/product-details.html';
       // window.location.href = 'account.html';
     });
   }
@@ -65,8 +65,8 @@ async function setupHeader() {
 
 // Función principal para cargar header y footer
 export async function loadHeaderFooter() {
-  const headerPath = await loadTemplate('/components/header.html');
-  const footerPath = await loadTemplate('/components/footer.html');
+  const headerPath = await loadTemplate('/src/components/header.html');
+  const footerPath = await loadTemplate('/src/components/footer.html');
   const header = document.getElementById('main-header');
   const footer = document.getElementById('main-footer');
 
