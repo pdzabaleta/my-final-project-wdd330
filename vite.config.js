@@ -9,7 +9,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: './dist', // Carpeta de salida del build
+    outDir: '../dist', // Carpeta de salida del build
     rollupOptions: {
       input: {
         main: '/index.html', // Archivo principal en el directorio root (src/index.html)
