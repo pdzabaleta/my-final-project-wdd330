@@ -1,5 +1,5 @@
-import { loadTemplate, renderWithTemplate } from '../js/utils.js';
-import { searchProducts } from '../js/search.mjs';
+import { loadTemplate, renderWithTemplate } from '/js/utils.js';
+import { searchProducts } from '/js/search.mjs';
 
 // Función para configurar el header con eventos y funcionalidades adicionales
 async function setupHeader() {
@@ -12,7 +12,7 @@ async function setupHeader() {
 
   if (logo) {
     logo.addEventListener('click', () => {
-      window.location.href = 'index.html';
+      window.location.href = '/index.html';
   });
   }
   if (searchInput) {
@@ -51,7 +51,7 @@ async function setupHeader() {
   // Eventos para navegación (íconos de cuenta y carrito)
   if (accountIcon) {
     accountIcon.addEventListener('click', () => {
-      window.location.href = 'product-details.html';
+      window.location.href = '/pages/product-details.html';
       // window.location.href = 'account.html';
     });
   }
@@ -65,8 +65,8 @@ async function setupHeader() {
 
 // Función principal para cargar header y footer
 export async function loadHeaderFooter() {
-  const headerPath = await loadTemplate('../components/header.html');
-  const footerPath = await loadTemplate('../components/footer.html');
+  const headerPath = await loadTemplate('/components/header.html');
+  const footerPath = await loadTemplate('/components/footer.html');
   const header = document.getElementById('main-header');
   const footer = document.getElementById('main-footer');
 
