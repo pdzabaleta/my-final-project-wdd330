@@ -6,7 +6,7 @@ export default defineConfig({
     port: 5173, // Cambia el puerto si es necesario
   },
   build: {
-    outDir: '../dist', // Salida del build en relación al root
+    outDir: './dist', // Salida del build dentro del root
     rollupOptions: {
       input: {
         main: 'index.html', // Define el archivo de entrada principal
