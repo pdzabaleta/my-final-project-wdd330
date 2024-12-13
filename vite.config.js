@@ -9,10 +9,10 @@ export default defineConfig({
     outDir: './dist', // Salida del build dentro del root
     rollupOptions: {
       input: {
-        main: 'index.html', // Define el archivo de entrada principal
-        productDetails: 'pages/product-details.html', // Otros archivos de entrada si es necesario
-        search: 'pages/search.html', // Otros archivos de entrada si es necesario
+        main: '/index.html', // Define el archivo de entrada principal
+        productDetails: '/pages/product-details.html', // Otros archivos de entrada si es necesario
+        search: '/pages/search.html', // Otros archivos de entrada si es necesario
       },
-    },
+    },   
   },
 });
