@@ -1,5 +1,5 @@
-import { loadTemplate, renderWithTemplate } from '/js/utils.js';
-import { searchProducts } from '/js/search.mjs';
+import { loadTemplate, renderWithTemplate } from '../js/utils.js';
+import { searchProducts } from '../js/search.mjs';
 
 // Función para configurar el header con eventos y funcionalidades adicionales
 async function setupHeader() {
@@ -26,9 +26,9 @@ async function setupHeader() {
 
           if (results) {
             localStorage.setItem('searchResults', JSON.stringify(results));
-            window.location.href = `search.html`;
+            window.location.href = `/pages/search.html`;
           } else {
-            window.location.href = `search.html?results=not_found`;
+            window.location.href = `/pages/search.html?results=not_found`;
           }
         } catch (error) {
           alert('There was a problem with the search. Please try again.');
