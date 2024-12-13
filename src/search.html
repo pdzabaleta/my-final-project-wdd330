@@ -14,25 +14,30 @@
     <footer id="main-footer"></footer>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const results = urlParams.get('results');
-
+        const notFound = urlParams.get('results') === 'not_found';
         const resultsDiv = document.getElementById('results');
-
-        if (results === 'not_found') {
-            resultsDiv.innerHTML = '<p>No products match your search query.</p>';
+      
+        if (notFound) {
+          resultsDiv.innerHTML = '<p>No products match your search query.</p>';
         } else {
-            const products = JSON.parse(decodeURIComponent(results));
+          const storedResults = localStorage.getItem('searchResults');
+          if (storedResults) {
+            const products = JSON.parse(storedResults);
             products.forEach(product => {
-                const productDiv = document.createElement('div');
-                productDiv.innerHTML = `
-                    <h2>${product.name}</h2>
-                    <p>Category: ${product.category}</p>
-                    <p>Price: $${product.price.toFixed(2)}</p>
-                `;
-                resultsDiv.appendChild(productDiv);
+              const productDiv = document.createElement('div');
+              productDiv.innerHTML = `
+                <h2>${product.name}</h2>
+                <p>Category: ${product.category}</p>
+                <p>Price: $${product.price.toFixed(2)}</p>
+              `;
+              resultsDiv.appendChild(productDiv);
             });
+          } else {
+            resultsDiv.innerHTML = '<p>Something went wrong. Please try again.</p>';
+          }
         }
-    </script>
-    <script type="module" src="js/utils.js"></script>
+      </script>
+      
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>
