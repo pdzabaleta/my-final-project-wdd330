@@ -12,7 +12,7 @@ async function setupHeader() {
 
   if (logo) {
     logo.addEventListener('click', () => {
-      window.location.href = '/src/index.html';
+      window.location.href = './index.html';
   });
   }
   if (searchInput) {
@@ -65,8 +65,8 @@ async function setupHeader() {
 
 // Función principal para cargar header y footer
 export async function loadHeaderFooter() {
-  const headerPath = await loadTemplate('/src/components/header.html');
-  const footerPath = await loadTemplate('/src/components/footer.html');
+  const headerPath = await loadTemplate('./components/header.html');
+  const footerPath = await loadTemplate('./components/footer.html');
   const header = document.getElementById('main-header');
   const footer = document.getElementById('main-footer');
 
