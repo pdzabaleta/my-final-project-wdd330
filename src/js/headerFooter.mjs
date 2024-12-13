@@ -1,4 +1,4 @@
-import { loadTemplate, renderWithTemplate } from '../js/utils';
+import { loadTemplate, renderWithTemplate } from '../js/utils.js';
 import { searchProducts } from '../js/search.mjs';
 
 // Función para configurar el header con eventos y funcionalidades adicionales
@@ -58,7 +58,7 @@ async function setupHeader() {
 
   if (cartIcon) {
     cartIcon.addEventListener('click', () => {
-      window.location.href = 'cart.html';
+      window.location.href = '#';
     });
   }
 }

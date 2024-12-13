@@ -1,16 +1,11 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: 'src', // Ajusta esto según la estructura de tu proyecto
-  server: {
-    port: 5173
-  },
+  root: 'src',
   build: {
-    outDir: '../dist', // Ajusta esto según la estructura de tu proyecto
-    rollupOptions: {
-      input: {
-        main: 'src/index.html'
-      }
-    }
-  }
+    outDir: '../dist',
+  },
+  server: {
+    open: '/pages/index.html',
+  },
 });
