@@ -1,18 +1,16 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: 'src', // Define el directorio raíz del servidor de desarrollo
+  root: 'src', // Ajusta esto según la estructura de tu proyecto
   server: {
-    port: 5173, // Cambia el puerto si es necesario
+    port: 5173
   },
   build: {
-    outDir: '../dist', // Salida del build en relación al root
+    outDir: '../dist', // Ajusta esto según la estructura de tu proyecto
     rollupOptions: {
       input: {
-        main: 'pages/index.html', // Define el archivo de entrada principal
-        productDetails: 'pages/product-details.html', // Otros archivos de entrada si es necesario
-        search: 'pages/search.html', // Otros archivos de entrada si es necesario
-      },
-    },
-  },
+        main: 'src/index.html'
+      }
+    }
+  }
 });
