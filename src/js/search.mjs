@@ -27,7 +27,7 @@ function levenshteinDistance(a, b) {
 }
 
 // Función principal de búsqueda
-export async function searchProducts(query, filePath = '/data/products.json') {
+export async function searchProducts(query, filePath = '/src/data/products.json') {
     try {
         const response = await fetch(filePath);
         if (!response.ok) {
