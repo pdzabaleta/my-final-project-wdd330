@@ -50,7 +50,7 @@ function renderProducts(products, container) {
         <button onclick="window.location.href='pages/product-details.html?id=${product.id}'">View Details</button>
       `;
       // Aseguramos que los productos se distribuyan correctamente en las áreas del grid
-      productCard.style.gridArea = `product${index + 1}`;
+      
       productsList.appendChild(productCard);
     });
   }

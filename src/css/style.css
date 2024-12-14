@@ -194,18 +194,14 @@ footer {
 #products-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-areas: 
-      "title title title" /* El título ocupa toda la primera fila */
-      "product1 product2 product3" /* Las primeras 3 tarjetas ocupan la siguiente fila */
-      "product4 product5 product6"; /* Continuación de las tarjetas */
-    gap: 20px;
+    gap: 20px; /* Espacio entre las tarjetas */
     padding: 20px;
     margin-top: 20px;
 }
 
-/* Centrar el título de los productos */
 #products-list-title {
-    grid-area: title;
+    grid-column: 1/4; /* El título ocupa las 3 columnas */
+    grid-row: 1/2;
     text-align: center;
     margin-bottom: 20px;
 }

@@ -45,7 +45,7 @@ function renderProductDetails(product) {
         `).join('')}
       </ul>
     </div>
-    <a href="./cart.html" class="btn">Go to Cart</a>
+    <a href="/pages/cart.html" class="btn">Go to Cart</a>
   `;
 }
 
