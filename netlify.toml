@@ -1,0 +1,3 @@
+[build]
+  publish = "src" # Publica desde la raíz (o cambia "." por la carpeta que contiene tus archivos HTML, CSS, y JS)
+  command = "" # No uses ningún comando de build

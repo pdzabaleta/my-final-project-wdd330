@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Potting Soil 20L",
-    "category": "Soil",
+    "category": "Soils",
     "price": 8.49,
     "description": "Nutrient-rich potting soil for healthy plant growth.",
     "details": "Enriched with essential nutrients to promote robust plant growth. Suitable for flowers, vegetables, and herbs.",
@@ -158,5 +158,325 @@
       {"customerName": "Rachel", "rating": 3, "comment": "Works well but could hold more liquid."}
     ],
     "rating": 4.2
+  },
+  {
+    "id": 11,
+    "name": "Pruning Shears",
+    "category": "Tools",
+    "price": 19.99,
+    "description": "Sharp pruning shears for precise cuts on plants and shrubs.",
+    "details": "Ergonomically designed handles and stainless steel blades for smooth cuts.",
+    "stock": 30,
+    "image": "images/pruning_shears.jpg",
+    "additionalImages": ["images/pruning_shears_closeup.jpg"],
+    "reviews": [
+      {"customerName": "Sophie", "rating": 5, "comment": "Cuts through branches like butter!"},
+      {"customerName": "Liam", "rating": 4, "comment": "Good quality, but could be a bit sharper."}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 12,
+    "name": "Garden Kneeling Pad",
+    "category": "Accessories",
+    "price": 12.49,
+    "description": "Comfortable kneeling pad to protect your knees while gardening.",
+    "details": "Made with high-density foam for extra comfort and durability.",
+    "stock": 45,
+    "image": "images/garden_kneeling_pad.jpg",
+    "additionalImages": ["images/garden_kneeling_pad_side.jpg"],
+    "reviews": [
+      {"customerName": "Megan", "rating": 5, "comment": "Very comfortable and helpful for long gardening sessions."},
+      {"customerName": "Jack", "rating": 4, "comment": "Nice pad, but it's a bit thick for some tasks."}
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 13,
+    "name": "Tulip Bulbs",
+    "category": "Seeds",
+    "price": 6.99,
+    "description": "Pack of tulip bulbs to add color to your garden.",
+    "details": "High-quality bulbs that bloom into beautiful tulips. Perfect for spring.",
+    "stock": 70,
+    "image": "images/tulip_bulbs.jpg",
+    "additionalImages": ["images/tulip_bulbs_closeup.jpg"],
+    "reviews": [
+      {"customerName": "Grace", "rating": 5, "comment": "The tulips bloomed beautifully in my garden."},
+      {"customerName": "Peter", "rating": 4, "comment": "Good quality, but I had a few bulbs that didn't sprout."}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 14,
+    "name": "Garden Rake",
+    "category": "Tools",
+    "price": 14.99,
+    "description": "Heavy-duty garden rake for leaves and soil.",
+    "details": "Wide tines and ergonomic handle for easy leaf raking and soil leveling.",
+    "stock": 40,
+    "image": "images/garden_rake.jpg",
+    "additionalImages": ["images/garden_rake_in_use.jpg"],
+    "reviews": [
+      {"customerName": "Rachel", "rating": 5, "comment": "Great rake, makes the job much easier."},
+      {"customerName": "Luke", "rating": 4, "comment": "Works well but could be more lightweight."}
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 15,
+    "name": "Fertilizer Spreader",
+    "category": "Tools",
+    "price": 29.99,
+    "description": "Spreader for even fertilizer distribution.",
+    "details": "Adjustable settings for precise control of fertilizer spread across your lawn.",
+    "stock": 15,
+    "image": "images/fertilizer_spreader.jpg",
+    "additionalImages": ["images/fertilizer_spreader_closeup.jpg"],
+    "reviews": [
+      {"customerName": "Tom", "rating": 5, "comment": "Makes fertilizing my lawn so much easier."},
+      {"customerName": "Emily", "rating": 4, "comment": "Good product but could be more durable."}
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 16,
+    "name": "Cactus Plant",
+    "category": "Plants",
+    "price": 12.99,
+    "description": "Low-maintenance cactus plant for your home or garden.",
+    "details": "Comes in a small pot. Perfect for dry, sunny spots.",
+    "stock": 50,
+    "image": "images/cactus_plant.jpg",
+    "additionalImages": ["images/cactus_plant_closeup.jpg"],
+    "reviews": [
+      {"customerName": "Nina", "rating": 5, "comment": "Perfect plant for my window sill."},
+      {"customerName": "Oliver", "rating": 4, "comment": "Nice cactus but a little smaller than expected."}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 17,
+    "name": "Garden Watering Can",
+    "category": "Tools",
+    "price": 14.99,
+    "description": "Durable watering can with a long spout for precise watering.",
+    "details": "Ideal for small and medium-sized gardens. Features a comfortable handle for easy carrying.",
+    "stock": 30,
+    "image": "images/watering_can.jpg",
+    "additionalImages": ["images/watering_can_side.jpg"],
+    "reviews": [
+      {"customerName": "James", "rating": 5, "comment": "Perfect for my garden!"},
+      {"customerName": "Isabella", "rating": 4, "comment": "Great, but a bit small for large areas."}
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 18,
+    "name": "Garden Shovel",
+    "category": "Tools",
+    "price": 19.99,
+    "description": "Sturdy shovel for digging, planting, and moving soil.",
+    "details": "Made with a reinforced steel blade and an ergonomic handle.",
+    "stock": 25,
+    "image": "images/garden_shovel.jpg",
+    "additionalImages": ["images/garden_shovel_side.jpg"],
+    "reviews": [
+      {"customerName": "Lily", "rating": 5, "comment": "Excellent for digging and planting."},
+      {"customerName": "Michael", "rating": 4, "comment": "Good shovel, but a bit heavy."}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 19,
+    "name": "Garden Pruning Saw",
+    "category": "Tools",
+    "price": 22.99,
+    "description": "Pruning saw for cutting thicker branches and stems.",
+    "details": "Compact and lightweight, yet durable enough for tougher cuts.",
+    "stock": 18,
+    "image": "images/pruning_saw.jpg",
+    "additionalImages": ["images/pruning_saw_in_use.jpg"],
+    "reviews": [
+      {"customerName": "Sophia", "rating": 5, "comment": "Perfect tool for trimming branches."},
+      {"customerName": "Ethan", "rating": 4, "comment": "Works great, but the handle could be more comfortable."}
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 20,
+    "name": "Flowering Cactus",
+    "category": "Plants",
+    "price": 17.99,
+    "description": "Blooming cactus plant that adds color to your home.",
+    "details": "Comes in a decorative pot with vibrant flowers that bloom seasonally.",
+    "stock": 40,
+    "image": "images/flowering_cactus.jpg",
+    "additionalImages": ["images/flowering_cactus_bloom.jpg"],
+    "reviews": [
+      {"customerName": "Mia", "rating": 5, "comment": "Beautiful plant with vibrant flowers."},
+      {"customerName": "David", "rating": 4, "comment": "Great plant, but takes longer to bloom."}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 21,
+    "name": "Basil Plant",
+    "category": "Plants",
+    "price": 6.49,
+    "description": "Fresh basil plant for your herb garden.",
+    "details": "Perfect for culinary use, this basil plant grows quickly in sunlight.",
+    "stock": 55,
+    "image": "images/basil_plant.jpg",
+    "additionalImages": ["images/basil_plant_closeup.jpg"],
+    "reviews": [
+      {"customerName": "Olivia", "rating": 5, "comment": "Great taste and easy to grow."},
+      {"customerName": "Lucas", "rating": 4, "comment": "Nice plant, but it wilted faster than expected."}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 22,
+    "name": "Hydrangea Plant",
+    "category": "Plants",
+    "price": 19.99,
+    "description": "Colorful hydrangea plant that thrives in both sun and shade.",
+    "details": "Produces large, vibrant flowers in a variety of colors throughout the year.",
+    "stock": 20,
+    "image": "images/hydrangea_plant.jpg",
+    "additionalImages": ["images/hydrangea_plant_bloom.jpg"],
+    "reviews": [
+      {"customerName": "Emma", "rating": 5, "comment": "Gorgeous flowers that brighten up my garden."},
+      {"customerName": "Noah", "rating": 4, "comment": "A bit delicate, but beautiful when it blooms."}
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 23,
+    "name": "Succulent Plant Set",
+    "category": "Plants",
+    "price": 14.99,
+    "description": "Set of three small succulent plants for indoor decor.",
+    "details": "Low-maintenance plants that thrive with minimal watering. Comes in decorative pots.",
+    "stock": 60,
+    "image": "images/succulent_set.jpg",
+    "additionalImages": ["images/succulent_set_pots.jpg"],
+    "reviews": [
+      {"customerName": "Isla", "rating": 5, "comment": "Perfect for my office, very low-maintenance."},
+      {"customerName": "James", "rating": 4, "comment": "Cute plants, but a little small."}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 24,
+    "name": "Garden Hose Reel",
+    "category": "Tools",
+    "price": 34.99,
+    "description": "Convenient hose reel for storing your garden hose.",
+    "details": "Easy to mount and retract the hose with a durable, tangle-free reel.",
+    "stock": 10,
+    "image": "images/garden_hose_reel.jpg",
+    "additionalImages": ["images/garden_hose_reel_side.jpg"],
+    "reviews": [
+      {"customerName": "Ava", "rating": 5, "comment": "Keeps my garden hose organized and tangle-free."},
+      {"customerName": "Zoe", "rating": 4, "comment": "Works well, but could be a bit more sturdy."}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 25,
+    "name": "Garden Cart",
+    "category": "Tools",
+    "price": 49.99,
+    "description": "Heavy-duty garden cart for hauling soil, plants, and tools.",
+    "details": "Built with a sturdy frame and large wheels for easy movement around your garden.",
+    "stock": 12,
+    "image": "images/garden_cart.jpg",
+    "additionalImages": ["images/garden_cart_side.jpg"],
+    "reviews": [
+      {"customerName": "Sophia", "rating": 5, "comment": "Perfect for transporting heavy loads."},
+      {"customerName": "Jack", "rating": 4, "comment": "Great cart, but it could use a better handle."}
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 26,
+    "name": "Garden Soil",
+    "category": "Soils",
+    "price": 11.99,
+    "description": "Garden soil is a loamy soil mix that is specifically designed for planting flowers and vegetables.",
+    "details": "This soil mix contains organic materials to improve soil structure, enhance drainage, and provide nutrients.",
+    "stock": 30,
+    "image": "images/garden_soil.jpg",
+    "additionalImages": ["images/garden_soil_closeup.jpg"],
+    "reviews": [
+      {"customerName": "Emily", "rating": 5, "comment": "Perfect soil for my garden, plants are thriving."},
+      {"customerName": "John", "rating": 4, "comment": "Good soil, but I had to mix it with compost for better results."}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 27,
+    "name": "Topsoil",
+    "category": "Soils",
+    "price": 9.99,
+    "description": "Topsoil is the uppermost layer of soil, often used to improve the quality of garden beds and lawns.",
+    "details": "This rich, fertile soil is perfect for leveling lawns or filling garden beds to enhance plant growth.",
+    "stock": 50,
+    "image": "images/topsoil.jpg",
+    "additionalImages": ["images/topsoil_bulk.jpg"],
+    "reviews": [
+      {"customerName": "Michael", "rating": 4, "comment": "Great for leveling the garden, but a bit dry."},
+      {"customerName": "Rachel", "rating": 5, "comment": "Used this to fill a flower bed, works great!"}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 28,
+    "name": "Potting Soil",
+    "category": "Soils",
+    "price": 13.99,
+    "description": "Potting soil is lightweight and designed for container plants, offering good drainage and nutrient retention.",
+    "details": "This soil is mixed with peat moss, perlite, and other materials to promote root growth and moisture retention in containers.",
+    "stock": 40,
+    "image": "images/potting_soil.jpg",
+    "additionalImages": ["images/potting_soil_bag.jpg"],
+    "reviews": [
+      {"customerName": "Olivia", "rating": 5, "comment": "Perfect for my indoor plants, they love it."},
+      {"customerName": "Daniel", "rating": 4, "comment": "Good soil, but it dries out faster than expected."}
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 29,
+    "name": "Coco Coir Soil",
+    "category": "Soils",
+    "price": 16.99,
+    "description": "Coco coir is made from the husks of coconuts and provides excellent moisture retention, making it great for hydroponic gardening.",
+    "details": "Coco coir is an environmentally friendly alternative to peat moss, offering great aeration and water retention for plants.",
+    "stock": 25,
+    "image": "images/coco_coir_soil.jpg",
+    "additionalImages": ["images/coco_coir_block.jpg"],
+    "reviews": [
+      {"customerName": "Sophia", "rating": 5, "comment": "This soil works wonders for my hydroponic setup."},
+      {"customerName": "David", "rating": 4, "comment": "Good quality, but I had to adjust the watering schedule."}
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 30,
+    "name": "Clay Soil",
+    "category": "Soils",
+    "price": 8.99,
+    "description": "Clay soil is dense and retains moisture well, making it ideal for plants that thrive in moist conditions but can be difficult to work with.",
+    "details": "This heavy soil has a high water-holding capacity and is perfect for moisture-loving plants, though it can become compacted.",
+    "stock": 20,
+    "image": "images/clay_soil.jpg",
+    "additionalImages": ["images/clay_soil_texture.jpg"],
+    "reviews": [
+      {"customerName": "James", "rating": 3, "comment": "Good for moisture-loving plants but a bit too heavy."},
+      {"customerName": "Lily", "rating": 5, "comment": "Perfect for my water garden, the plants are thriving."}
+    ],
+    "rating": 4.0
   }
 ]
