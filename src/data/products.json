@@ -7,7 +7,7 @@
     "description": "Durable stainless steel trowel for all your gardening needs.",
     "details": "This stainless steel trowel is perfect for planting, transplanting, and general garden maintenance. The ergonomic handle provides comfort for extended use.",
     "stock": 50,
-    "image": "images/garden_trowel.jpg",
+    "image": "https://images.thdstatic.com/productImages/6f5ed087-a6fc-48f1-afec-eeed427e3869/svn/husky-garden-trowels-gd210301-e4_300.jpg",
     "additionalImages": ["images/garden_trowel_side.jpg", "images/garden_trowel_in_use.jpg"],
     "reviews": [
       {"customerName": "Alice", "rating": 5, "comment": "Great quality and very durable."},
@@ -23,7 +23,7 @@
     "description": "Nutrient-rich potting soil for healthy plant growth.",
     "details": "Enriched with essential nutrients to promote robust plant growth. Suitable for flowers, vegetables, and herbs.",
     "stock": 100,
-    "image": "images/potting_soil.jpg",
+    "image": "https://images.thdstatic.com/productImages/53cc5790-c1f7-4423-9d23-4c1a28087578/svn/kellogg-garden-organics-garden-soil-6850-64_300.jpg",
     "additionalImages": ["images/potting_soil_closeup.jpg"],
     "reviews": [
       {"customerName": "Cindy", "rating": 5, "comment": "Best soil I've used for my roses!"},
@@ -39,7 +39,7 @@
     "description": "Beautiful blooming rose plant for your garden.",
     "details": "Comes in a 1-gallon pot. With proper care, it will bloom multiple times a year.",
     "stock": 30,
-    "image": "images/rose_plant.jpg",
+    "image": "https://images.thdstatic.com/productImages/5db418c3-0546-48fa-bf2e-6cb2a819c120/svn/proven-winners-rose-bushes-16888-64_300.jpg",
     "additionalImages": ["images/rose_plant_closeup.jpg", "images/rose_plant_bloom.jpg"],
     "reviews": [
       {"customerName": "Chris", "rating": 5, "comment": "Gorgeous blooms!"},
@@ -55,7 +55,7 @@
     "description": "Comfortable and durable gloves for gardening.",
     "details": "Made with breathable fabric and reinforced fingertips for extra protection.",
     "stock": 75,
-    "image": "images/gardening_gloves.jpg",
+    "image": "https://images.thdstatic.com/productImages/a1ec65d5-c224-4ddf-860e-fffd633aa1b9/svn/firm-grip-gardening-gloves-63911-06-64_300.jpg",
     "additionalImages": ["images/gardening_gloves_back.jpg"],
     "reviews": [
       {"customerName": "Eve", "rating": 5, "comment": "Very comfortable and sturdy."},
@@ -71,7 +71,7 @@
     "description": "Grow your own herbs with this easy-to-use seed kit.",
     "details": "Includes seeds for basil, parsley, and cilantro. Perfect for beginners.",
     "stock": 40,
-    "image": "images/herb_seed_kit.jpg",
+    "image": "https://images.thdstatic.com/productImages/be4c128c-ee48-4625-973c-ba1a72ab7575/svn/hydroponic-seed-starters-chp102216-64_300.jpg",
     "additionalImages": ["images/herb_seed_kit_open.jpg"],
     "reviews": [
       {"customerName": "Grace", "rating": 5, "comment": "Easy to grow and fresh herbs taste amazing!"},
@@ -87,7 +87,7 @@
     "description": "Flexible and durable garden hose for watering.",
     "details": "50ft length with brass connectors for durability. Kink-resistant and lightweight.",
     "stock": 20,
-    "image": "images/garden_hose.jpg",
+    "image": "https://images.thdstatic.com/productImages/257bcd78-c8e5-489f-b373-05d9cf94170f/svn/continental-garden-hoses-20258074-64_300.jpg",
     "additionalImages": ["images/garden_hose_coiled.jpg", "images/garden_hose_in_use.jpg"],
     "reviews": [
       {"customerName": "Ivan", "rating": 5, "comment": "Great quality, no leaks!"},
@@ -103,7 +103,7 @@
     "description": "High-yield tomato plant for your home garden.",
     "details": "Produces delicious tomatoes throughout the season. Easy to grow and maintain.",
     "stock": 60,
-    "image": "images/tomato_plant.jpg",
+    "image": "https://images.thdstatic.com/productImages/6938ce3f-fbcd-44f7-a294-fca33acbc47d/svn/bonnie-plants-harvest-select-tomatoes-715339321725-64_300.jpg",
     "additionalImages": ["images/tomato_plant_closeup.jpg"],
     "reviews": [
       {"customerName": "Karen", "rating": 5, "comment": "My tomatoes are thriving!"},
@@ -119,7 +119,7 @@
     "description": "Eco-friendly compost bin for garden waste.",
     "details": "Easy to assemble and perfect for reducing waste. Includes ventilation for proper decomposition.",
     "stock": 15,
-    "image": "images/compost_bin.jpg",
+    "image": "https://images.thdstatic.com/productImages/7d76c469-1a9e-4a0a-899e-51c5a954ca46/svn/stationary-composters-g0955s00-64_300.jpg",
     "additionalImages": ["images/compost_bin_open.jpg"],
     "reviews": [
       {"customerName": "Mia", "rating": 4, "comment": "Good size and sturdy."},
@@ -135,7 +135,7 @@
     "description": "Pack of sunflower seeds to brighten your garden.",
     "details": "High-germination rate seeds that produce tall and vibrant sunflowers.",
     "stock": 90,
-    "image": "images/sunflower_seeds.jpg",
+    "image": "https://images.thdstatic.com/productImages/af9e0f26-5e43-46ba-a4a9-be4a813965bc/svn/burpee-flower-seeds-32033-64_300.jpg",
     "additionalImages": ["images/sunflower_field.jpg"],
     "reviews": [
       {"customerName": "Olivia", "rating": 5, "comment": "Beautiful flowers!"},
@@ -151,7 +151,7 @@
     "description": "Handheld sprayer for pesticides and fertilizers.",
     "details": "Adjustable nozzle for fine mist or powerful spray. Easy to carry and refill.",
     "stock": 25,
-    "image": "images/garden_sprayer.jpg",
+    "image": "https://images.thdstatic.com/productImages/cc5281e6-5d58-43e3-8b15-5b8b9b601564/svn/hdx-pump-sprayers-1501hdxa-64_300.jpg",
     "additionalImages": ["images/garden_sprayer_closeup.jpg"],
     "reviews": [
       {"customerName": "Quincy", "rating": 5, "comment": "Perfect for small gardens."},
@@ -167,7 +167,7 @@
     "description": "Sharp pruning shears for precise cuts on plants and shrubs.",
     "details": "Ergonomically designed handles and stainless steel blades for smooth cuts.",
     "stock": 30,
-    "image": "images/pruning_shears.jpg",
+    "image": "https://images.thdstatic.com/productImages/15cd0e53-6ff0-43d2-8265-86abc1ef0135/svn/fiskars-pruning-shears-1072981-64_300.jpg",
     "additionalImages": ["images/pruning_shears_closeup.jpg"],
     "reviews": [
       {"customerName": "Sophie", "rating": 5, "comment": "Cuts through branches like butter!"},
@@ -183,7 +183,7 @@
     "description": "Comfortable kneeling pad to protect your knees while gardening.",
     "details": "Made with high-density foam for extra comfort and durability.",
     "stock": 45,
-    "image": "images/garden_kneeling_pad.jpg",
+    "image": "https://images.thdstatic.com/productImages/3be24b83-3cd1-4399-b110-b760e6e571da/svn/earth-edge-gardening-tool-accessories-ee000261-64_300.jpg",
     "additionalImages": ["images/garden_kneeling_pad_side.jpg"],
     "reviews": [
       {"customerName": "Megan", "rating": 5, "comment": "Very comfortable and helpful for long gardening sessions."},
@@ -199,7 +199,7 @@
     "description": "Pack of tulip bulbs to add color to your garden.",
     "details": "High-quality bulbs that bloom into beautiful tulips. Perfect for spring.",
     "stock": 70,
-    "image": "images/tulip_bulbs.jpg",
+    "image": "https://images.thdstatic.com/productImages/b65f0efc-f717-4399-b321-a57606074735/svn/garden-state-bulb-flower-bulbs-ecf-134-25-01-64_300.jpg",
     "additionalImages": ["images/tulip_bulbs_closeup.jpg"],
     "reviews": [
       {"customerName": "Grace", "rating": 5, "comment": "The tulips bloomed beautifully in my garden."},
@@ -215,7 +215,7 @@
     "description": "Heavy-duty garden rake for leaves and soil.",
     "details": "Wide tines and ergonomic handle for easy leaf raking and soil leveling.",
     "stock": 40,
-    "image": "images/garden_rake.jpg",
+    "image": "https://images.thdstatic.com/productImages/876132fa-d39f-45bc-82c5-bd99cf758147/svn/anvil-landscaping-rakes-77105-943-64_300.jpg",
     "additionalImages": ["images/garden_rake_in_use.jpg"],
     "reviews": [
       {"customerName": "Rachel", "rating": 5, "comment": "Great rake, makes the job much easier."},
@@ -231,7 +231,7 @@
     "description": "Spreader for even fertilizer distribution.",
     "details": "Adjustable settings for precise control of fertilizer spread across your lawn.",
     "stock": 15,
-    "image": "images/fertilizer_spreader.jpg",
+    "image": "https://images.thdstatic.com/productImages/135ff5d3-0d38-4b92-9ca3-b33e56884775/svn/echo-spreaders-rb-60-64_300.jpg",
     "additionalImages": ["images/fertilizer_spreader_closeup.jpg"],
     "reviews": [
       {"customerName": "Tom", "rating": 5, "comment": "Makes fertilizing my lawn so much easier."},
@@ -247,7 +247,7 @@
     "description": "Low-maintenance cactus plant for your home or garden.",
     "details": "Comes in a small pot. Perfect for dry, sunny spots.",
     "stock": 50,
-    "image": "images/cactus_plant.jpg",
+    "image": "https://images.thdstatic.com/productImages/e8d7e8a6-1f0b-492d-9d5d-b54a6bfba099/svn/smart-planet-cactus-plants-0872525-64_300.jpg",
     "additionalImages": ["images/cactus_plant_closeup.jpg"],
     "reviews": [
       {"customerName": "Nina", "rating": 5, "comment": "Perfect plant for my window sill."},
@@ -263,7 +263,7 @@
     "description": "Durable watering can with a long spout for precise watering.",
     "details": "Ideal for small and medium-sized gardens. Features a comfortable handle for easy carrying.",
     "stock": 30,
-    "image": "images/watering_can.jpg",
+    "image": "https://images.thdstatic.com/productImages/47157cf5-a3d6-44a1-a3cc-791b4c71a9fc/svn/watering-cans-swc1599-64_300.jpg",
     "additionalImages": ["images/watering_can_side.jpg"],
     "reviews": [
       {"customerName": "James", "rating": 5, "comment": "Perfect for my garden!"},
@@ -279,7 +279,7 @@
     "description": "Sturdy shovel for digging, planting, and moving soil.",
     "details": "Made with a reinforced steel blade and an ergonomic handle.",
     "stock": 25,
-    "image": "images/garden_shovel.jpg",
+    "image": "https://images.thdstatic.com/productImages/771736b8-b40d-467d-8099-8410e2bf354a/svn/anvil-shovels-3531300-64_300.jpg",
     "additionalImages": ["images/garden_shovel_side.jpg"],
     "reviews": [
       {"customerName": "Lily", "rating": 5, "comment": "Excellent for digging and planting."},
@@ -295,7 +295,7 @@
     "description": "Pruning saw for cutting thicker branches and stems.",
     "details": "Compact and lightweight, yet durable enough for tougher cuts.",
     "stock": 18,
-    "image": "images/pruning_saw.jpg",
+    "image": "https://images.thdstatic.com/productImages/c5f7229e-3a64-4b34-8790-f2e1da5c4a6d/svn/corona-pruning-saws-rs16020cch-64_300.jpg",
     "additionalImages": ["images/pruning_saw_in_use.jpg"],
     "reviews": [
       {"customerName": "Sophia", "rating": 5, "comment": "Perfect tool for trimming branches."},
@@ -311,7 +311,7 @@
     "description": "Blooming cactus plant that adds color to your home.",
     "details": "Comes in a decorative pot with vibrant flowers that bloom seasonally.",
     "stock": 40,
-    "image": "images/flowering_cactus.jpg",
+    "image": "https://images.thdstatic.com/productImages/9631635f-29fd-410e-b652-bfa38eeca7cf/svn/northlight-artificial-succulents-32738602-64_300.jpg",
     "additionalImages": ["images/flowering_cactus_bloom.jpg"],
     "reviews": [
       {"customerName": "Mia", "rating": 5, "comment": "Beautiful plant with vibrant flowers."},
@@ -327,7 +327,7 @@
     "description": "Fresh basil plant for your herb garden.",
     "details": "Perfect for culinary use, this basil plant grows quickly in sunlight.",
     "stock": 55,
-    "image": "images/basil_plant.jpg",
+    "image": "https://images.thdstatic.com/productImages/d769a523-2a86-4943-af42-365ef3c1f332/svn/bonnie-plants-herb-plants-118480-64_300.jpg",
     "additionalImages": ["images/basil_plant_closeup.jpg"],
     "reviews": [
       {"customerName": "Olivia", "rating": 5, "comment": "Great taste and easy to grow."},
@@ -343,7 +343,7 @@
     "description": "Colorful hydrangea plant that thrives in both sun and shade.",
     "details": "Produces large, vibrant flowers in a variety of colors throughout the year.",
     "stock": 20,
-    "image": "images/hydrangea_plant.jpg",
+    "image": "https://images.thdstatic.com/productImages/b16ac724-d37f-41b6-b5eb-804880b0f446/svn/proven-winners-hydrangeas-14439-64_300.jpg",
     "additionalImages": ["images/hydrangea_plant_bloom.jpg"],
     "reviews": [
       {"customerName": "Emma", "rating": 5, "comment": "Gorgeous flowers that brighten up my garden."},
@@ -359,7 +359,7 @@
     "description": "Set of three small succulent plants for indoor decor.",
     "details": "Low-maintenance plants that thrive with minimal watering. Comes in decorative pots.",
     "stock": 60,
-    "image": "images/succulent_set.jpg",
+    "image": "https://images.thdstatic.com/productImages/2b9b0a6b-fffc-4468-9f95-b73a721e8f74/svn/smart-planet-succulent-plants-0881173-64_300.jpg",
     "additionalImages": ["images/succulent_set_pots.jpg"],
     "reviews": [
       {"customerName": "Isla", "rating": 5, "comment": "Perfect for my office, very low-maintenance."},
@@ -375,7 +375,7 @@
     "description": "Convenient hose reel for storing your garden hose.",
     "details": "Easy to mount and retract the hose with a durable, tangle-free reel.",
     "stock": 10,
-    "image": "images/garden_hose_reel.jpg",
+    "image": "https://images.thdstatic.com/productImages/7bfdc76e-6a45-4509-b892-a04d6d3bbb3b/svn/aluminum-gorilla-hose-reels-grs-150-64_300.jpg",
     "additionalImages": ["images/garden_hose_reel_side.jpg"],
     "reviews": [
       {"customerName": "Ava", "rating": 5, "comment": "Keeps my garden hose organized and tangle-free."},
@@ -391,7 +391,7 @@
     "description": "Heavy-duty garden cart for hauling soil, plants, and tools.",
     "details": "Built with a sturdy frame and large wheels for easy movement around your garden.",
     "stock": 12,
-    "image": "images/garden_cart.jpg",
+    "image": "https://images.thdstatic.com/productImages/09139d6a-e524-4e3d-9812-bd8f57e0c8a9/svn/gorilla-carts-garden-carts-gcg-7-64_300.jpg",
     "additionalImages": ["images/garden_cart_side.jpg"],
     "reviews": [
       {"customerName": "Sophia", "rating": 5, "comment": "Perfect for transporting heavy loads."},
@@ -407,7 +407,7 @@
     "description": "Garden soil is a loamy soil mix that is specifically designed for planting flowers and vegetables.",
     "details": "This soil mix contains organic materials to improve soil structure, enhance drainage, and provide nutrients.",
     "stock": 30,
-    "image": "images/garden_soil.jpg",
+    "image": "https://images.thdstatic.com/productImages/8d51618a-abef-4199-9eb8-c8030f7fd37c/svn/miracle-gro-garden-soil-75030430-64_300.jpg",
     "additionalImages": ["images/garden_soil_closeup.jpg"],
     "reviews": [
       {"customerName": "Emily", "rating": 5, "comment": "Perfect soil for my garden, plants are thriving."},
@@ -423,7 +423,7 @@
     "description": "Topsoil is the uppermost layer of soil, often used to improve the quality of garden beds and lawns.",
     "details": "This rich, fertile soil is perfect for leveling lawns or filling garden beds to enhance plant growth.",
     "stock": 50,
-    "image": "images/topsoil.jpg",
+    "image": "https://images.thdstatic.com/productImages/4be53330-34b6-48ab-8e43-75ceae2eeab7/svn/scotts-topsoil-71130756-64_300.jpg",
     "additionalImages": ["images/topsoil_bulk.jpg"],
     "reviews": [
       {"customerName": "Michael", "rating": 4, "comment": "Great for leveling the garden, but a bit dry."},
@@ -439,7 +439,7 @@
     "description": "Potting soil is lightweight and designed for container plants, offering good drainage and nutrient retention.",
     "details": "This soil is mixed with peat moss, perlite, and other materials to promote root growth and moisture retention in containers.",
     "stock": 40,
-    "image": "images/potting_soil.jpg",
+    "image": "https://images.thdstatic.com/productImages/f67da8a8-24ed-4168-90f3-f15d2558deea/svn/vigoro-potting-soil-74177925-64_300.jpg",
     "additionalImages": ["images/potting_soil_bag.jpg"],
     "reviews": [
       {"customerName": "Olivia", "rating": 5, "comment": "Perfect for my indoor plants, they love it."},
@@ -455,7 +455,7 @@
     "description": "Coco coir is made from the husks of coconuts and provides excellent moisture retention, making it great for hydroponic gardening.",
     "details": "Coco coir is an environmentally friendly alternative to peat moss, offering great aeration and water retention for plants.",
     "stock": 25,
-    "image": "images/coco_coir_soil.jpg",
+    "image": "https://images.thdstatic.com/productImages/764baa93-62d5-4601-8f2a-80b3ce4d7bfc/svn/organic-potting-soil-the-mix-64_300.jpg",
     "additionalImages": ["images/coco_coir_block.jpg"],
     "reviews": [
       {"customerName": "Sophia", "rating": 5, "comment": "This soil works wonders for my hydroponic setup."},
@@ -471,7 +471,7 @@
     "description": "Clay soil is dense and retains moisture well, making it ideal for plants that thrive in moist conditions but can be difficult to work with.",
     "details": "This heavy soil has a high water-holding capacity and is perfect for moisture-loving plants, though it can become compacted.",
     "stock": 20,
-    "image": "images/clay_soil.jpg",
+    "image": "https://images.thdstatic.com/productImages/8c083796-ed73-4f0c-b266-ff9e4f5ddeb9/svn/the-bonsai-supply-grow-media-calcined-clay-2-qt-64_300.jpg",
     "additionalImages": ["images/clay_soil_texture.jpg"],
     "reviews": [
       {"customerName": "James", "rating": 3, "comment": "Good for moisture-loving plants but a bit too heavy."},
