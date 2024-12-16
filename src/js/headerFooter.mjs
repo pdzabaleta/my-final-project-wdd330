@@ -26,9 +26,9 @@ async function setupHeader() {
 
           if (results) {
             localStorage.setItem('searchResults', JSON.stringify(results));
-            window.location.href = `./pages/search.html`;
+            window.location.href = `../pages/search.html`;
           } else {
-            window.location.href = `./pages/search.html?results=not_found`;
+            window.location.href = `../pages/search.html?results=not_found`;
           }
         } catch (error) {
           alert('There was a problem with the search. Please try again.');
