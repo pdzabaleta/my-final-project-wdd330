@@ -9,9 +9,14 @@
 </head>
 <body>
     <header id="main-header"></header>
-    <h1>Search Results</h1>
-    <div id="results"></div>
+
+    <div class="search-results-wrapper">
+        <h1 class="search-title">Search Results</h1>
+        <div id="results" class="card-container"></div>
+    </div>
+
     <footer id="main-footer"></footer>
+
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const notFound = urlParams.get('results') === 'not_found';
@@ -25,10 +30,14 @@
             const products = JSON.parse(storedResults);
             products.forEach(product => {
               const productDiv = document.createElement('div');
+              productDiv.classList.add('card');
               productDiv.innerHTML = `
-                <h2>${product.name}</h2>
-                <p>Category: ${product.category}</p>
-                <p>Price: $${product.price.toFixed(2)}</p>
+                <img src="${product.image}" alt="${product.name}" class="card-img">
+                <h2 class="card-title">${product.name}</h2>
+                <p class="card-category">Category: ${product.category}</p>
+                <p class="card-price">Price: $${product.price.toFixed(2)}</p>
+                <p class="card-description">${product.description}</p>
+                <button class="product-details-btn" onclick="window.location.href='../pages/product-details.html?id=${product.id}'">View Details</button>
               `;
               resultsDiv.appendChild(productDiv);
             });
@@ -36,8 +45,8 @@
             resultsDiv.innerHTML = '<p>Something went wrong. Please try again.</p>';
           }
         }
-      </script>
-      
+    </script>
+
     <script type="module" src="../js/index.js"></script>
 </body>
 </html>

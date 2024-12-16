@@ -3,13 +3,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 header {
     display: flex;
-    justify-content: space-between;
+    /* width: 100%; */
+    /* justify-content: space-between; */
     background-color: rgb(175, 18, 18);
+    padding: 5px 0.6rem;
 }
+
 .search-wrapper {
     width: 75%;
     padding-left: 10px;
@@ -31,7 +34,7 @@ header {
     outline: none;  /* Elimina el borde por defecto */
 }
 #search {
-    width: 90%;
+    width: 100%;
     border-radius: 30px;
     border: none;
     padding-left: 30px;
@@ -41,12 +44,14 @@ header {
 .user {
     display: flex; /* Alinea el icono y el texto en línea */
     flex-direction: row; /* Hace que los elementos dentro de .user estén apilados verticalmente */
-    align-items: center; /* Alinea todos los elementos horizontalmente al centro */
+    align-items: center; 
+    justify-content: center;
     font-size: 16px; /* Tamaño de texto */
     color: #333; /* Color del texto */
-    width: 10%;
+    width: 10%; 
     
 }
+
 .text-user {
     /* background-color: #f4f4f4; */
     display: flex;
@@ -78,6 +83,9 @@ header {
 .cart {
     width: 5%;
     align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cart i{
     color: white;
@@ -229,7 +237,8 @@ footer {
 }
 
 /* Estilo del botón en las tarjetas */
-.product-card button {
+.product-card button,
+.card button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -341,4 +350,144 @@ footer {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+}
+
+
+
+.search-results-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.search-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+/* Product card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0 15px 15px 15px;
+    
+    justify-content: space-between; /* Space between content and button */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+}
+
+/* Card details */
+.card-title {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin: 15px;
+}
+
+.card-category {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.card-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.product-details-btn {
+    align-self: center; /* Centers the button horizontally */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px; /* Add some space at the bottom */
+}
+
+.product-details-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design for screens with max-width of 768px */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 20px ;
+    }
+    .text-user {display: none;}
+    
+    #search{
+        padding: 12px 30px;
+        height: 1.5rem;
+    }
+    .search-wrapper {
+        width: 70%;
+        justify-content: flex-start;
+    }
+    .cart {
+        width: 10%;
+    }
+    .product-card {
+        grid-column: 1/4;
+    }
+    .user i, 
+    .cart i{
+        font-size: 25px;
+    }
+    .search-title {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-price {
+        font-size: 1rem;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+    }
 }
