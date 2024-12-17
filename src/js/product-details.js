@@ -45,8 +45,33 @@ function renderProductDetails(product) {
         `).join('')}
       </ul>
     </div>
-    <a href="/pages/cart.html" class="btn">Go to Cart</a>
+    <button class="btn" id="add-to-cart">Add to Cart</button>
   `;
+
+  // Agregar evento al botón de agregar al carrito
+  document.getElementById('add-to-cart').addEventListener('click', () => addToCart(product));
+}
+
+// Función para agregar un producto al carrito
+function addToCart(product) {
+  // Obtener el carrito actual del localStorage
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+  // Buscar si el producto ya está en el carrito
+  const existingProduct = cart.find(item => item.id === product.id);
+  
+  if (existingProduct) {
+    // Incrementar la cantidad si ya existe
+    existingProduct.quantity++;
+  } else {
+    // Agregar un nuevo producto con cantidad 1
+    cart.push({ ...product, quantity: 1 });
+  }
+  
+  // Guardar el carrito actualizado en el localStorage
+  localStorage.setItem('cart', JSON.stringify(cart));
+  
+  alert('Product added to cart!');
 }
 
 // Inicializar la página de detalles
