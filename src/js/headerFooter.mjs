@@ -58,7 +58,7 @@ async function setupHeader() {
 
   if (cartIcon) {
     cartIcon.addEventListener('click', () => {
-      window.location.href = '#';
+      window.location.href = '/pages/cart.html';
     });
   }
 }

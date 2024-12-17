@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Cart</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
-  <header id="header"></header>
-  <main id="main">
-    <h1>Your Shopping Cart</h1>
-    <div id="cart-items"></div> <!-- Aquí se mostrarán los productos en el carrito -->
-    <div id="total-price"></div> <!-- Aquí se mostrará el total del carrito -->
-    <a href="/index.html" class="btn">Continue Shopping</a>
-  </main>
-  <footer id="footer"></footer>
+  <header id="main-header"></header>
+  <main id="cart-main">
+    <h1 class="cart-main-title">Your Shopping Cart</h1>
+    <div id="cart-items-container"></div>
+    <div id="cart-total-container"></div>
+    <div id="cart-buttons-container">  <!-- Nueva sección para los botones -->
+      <button class="btn" id="checkout-btn">Checkout</button>
+      <a href="/index.html" id="continue-shopping-btn">Continue Shopping</a>
+    </div>
 
-  <script src="js/cart.js"></script>
+  </main>
+  
+  
+  <footer id="main-footer"></footer>
+
+  <script type="module" src="../js/cart.js"></script>
 </body>
 </html>
