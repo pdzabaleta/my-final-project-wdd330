@@ -167,6 +167,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1000;
 }
 /* ///////////////////////////////////////////////////////////////// */
 /* Barra superior */
@@ -342,9 +343,7 @@ footer {
     border: none;
 }
 
-#product-details .btn:hover {
-    background-color: #45a049;
-}
+
 
 /* Botón de regreso */
 #product-details .back-button {
@@ -544,7 +543,8 @@ footer {
 /* Total price container */
 #cart-total-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-self: flex-end;
     margin-top: 30px;
     font-size: 1.5rem;
     color: #333;
@@ -556,32 +556,14 @@ footer {
     margin: 0;
 }
 
-/* Checkout button */
-#checkout-btn {
-    display: block;
-    width: 200px;
-    padding: 12px;
-    margin: 20px auto;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-#checkout-btn:hover {
-    background-color: #218838;
-}
 
 /* Continue shopping link */
 #continue-shopping-btn {
     display: block;
-    width: 200px;
+    width: 100%;
     padding: 12px;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     background-color: #007bff;
     color: white;
     text-align: center;
@@ -597,12 +579,18 @@ footer {
 
 #cart-buttons-container {
     display: flex;
-    flex-direction: row; /* Stacked buttons on mobile */
-    gap: 10px;
+    /* flex-direction: row; */
+    /* gap: 10px; */
+    margin-top: 20px;
     width: 100%;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
+}
+#paypal-button-container {
+    width: 90%;
+    display: flex;
+    justify-self: center;
 }
 /* Responsive Design for screens with max-width of 768px */
 @media (max-width: 768px) {
@@ -691,16 +679,13 @@ footer {
         
     }
 
-    #checkout-btn, #continue-shopping-btn {
+    #continue-shopping-btn {
         width: 100%;
         padding: 15px;
         font-size: 1.1rem;
     }
 
-    #checkout-btn {
-        margin-bottom: 10px;
-    }
-
+ 
     #continue-shopping-btn {
         margin-top: 10px;
     }

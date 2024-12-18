@@ -6,6 +6,8 @@
   <title>Shopping Cart</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <script src="https://www.paypal.com/sdk/js?client-id=AeXsFR1_IhK2R9wDBN_2XzedoRURO8ixQJ2a5zt91vGkNRtxhQ5kbOlfUPnNpOGWXtK_HCERJ1eehdTb&currency=USD"></script>
+
 </head>
 <body>
   <header id="main-header"></header>
@@ -13,13 +15,15 @@
     <h1 class="cart-main-title">Your Shopping Cart</h1>
     <div id="cart-items-container"></div>
     <div id="cart-total-container"></div>
+    
     <div id="cart-buttons-container">  <!-- Nueva sección para los botones -->
-      <button class="btn" id="checkout-btn">Checkout</button>
-      <a href="/index.html" id="continue-shopping-btn">Continue Shopping</a>
+      <div id="paypal-button-container"></div>
+
+      
     </div>
 
   </main>
-  
+  <!-- change checkout-btn    class="btn" -->
   
   <footer id="main-footer"></footer>
 
