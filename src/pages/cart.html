@@ -1,28 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-</head>
-<body>
-  <header id="main-header"></header>
-  <main id="cart-main">
-    <h1 class="cart-main-title">Your Shopping Cart</h1>
-    <div id="cart-items-container"></div>
-    <div id="cart-total-container"></div>
-    <div id="cart-buttons-container">  <!-- Nueva sección para los botones -->
-      <button class="btn" id="checkout-btn">Checkout</button>
-      <a href="/index.html" id="continue-shopping-btn">Continue Shopping</a>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <script src="https://www.paypal.com/sdk/js?client-id=AeXsFR1_IhK2R9wDBN_2XzedoRURO8ixQJ2a5zt91vGkNRtxhQ5kbOlfUPnNpOGWXtK_HCERJ1eehdTb&currency=USD"></script>
+  </head>
+  <body>
+    <header id="main-header"></header>
+    <main id="cart-main">
+      <h1 class="cart-main-title">Your Shopping Cart</h1>
+      <div id="cart-items-container"></div>
+      <div id="cart-total-container"></div>
 
-  </main>
-  
-  
-  <footer id="main-footer"></footer>
+      <div id="cart-buttons-container">
+        <div id="paypal-button-container"></div>
+      </div>
+    </main>
 
-  <script type="module" src="../js/cart.js"></script>
-</body>
+    <footer id="main-footer"></footer>
+
+    <script type="module" src="../js/cart.js"></script>
+  </body>
 </html>

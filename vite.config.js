@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   root: 'src', // Define el directorio raíz para el servidor de desarrollo
-  base: '/',    // Esto asegura que las rutas relativas funcionen correctamente en producción
+  base: '/', // Esto asegura que las rutas relativas funcionen correctamente en producción
 
   server: {
     port: 5173, // Cambia el puerto si es necesario
@@ -19,4 +19,4 @@ export default defineConfig({
       },
     },
   },
-});
+})
