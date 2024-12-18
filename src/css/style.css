@@ -46,31 +46,8 @@ header {
     height:35px;
 }
 
-.user {
-    display: flex; /* Alinea el icono y el texto en línea */
-    flex-direction: row; /* Hace que los elementos dentro de .user estén apilados verticalmente */
-    align-items: center; 
-    justify-content: center;
-    font-size: 16px; /* Tamaño de texto */
-    color: #333; /* Color del texto */
-    width: 10%; 
-    
-}
 
-.text-user {
-    /* background-color: #f4f4f4; */
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-    cursor: pointer;
 
-}
-.user i {
-    font-size: 30px; /* Tamaño del icono */
-    color: #ffffff; /* Color del icono */
-    cursor: pointer;
-
-}
 
 .hello, .sign-in {
     font-weight: bold; /* Aplica negrita a los textos */
@@ -226,13 +203,15 @@ footer {
     padding: 10px;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: white; /* Fondo blanco para las tarjetas */
+    overflow: hidden;
 }
 
 /* Efecto hover sobre las tarjetas de productos */
 .product-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 /* Estilo de la imagen dentro de la tarjeta */
@@ -240,7 +219,33 @@ footer {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    transition: transform 1.3s ease
 }
+
+.product-card img:hover {
+    transform: rotate(03deg);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.product-card {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Estilo del botón en las tarjetas */
 .product-card button,
@@ -597,7 +602,7 @@ footer {
     .logo h1 {
         font-size: 20px ;
     }
-    .text-user {display: none;}
+    
     
     #search{
         padding: 12px 30px;
@@ -613,7 +618,7 @@ footer {
     .product-card {
         grid-column: 1/4;
     }
-    .user i, 
+    
     .cart i{
         font-size: 25px;
     }
@@ -694,3 +699,56 @@ footer {
         align-self: center;
     }
 }
+/* No se modifican las reglas existentes, solo se agregan nuevos estilos */
+
+.weather-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.weather-info img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.weather-info .temperature {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather-info .description {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .weather-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .weather-info {
+        margin-bottom: 10px;
+    }
+
+    .weather-info img {
+        width: 40px;
+    }
+
+    .weather-info .temperature {
+        font-size: 1.5rem;
+    }
+}
+

@@ -61,3 +61,48 @@ function renderProducts(products, container) {
     productsList.appendChild(productCard);
   });
 }
+const apiKey = 'fbd84acb3840d4382467a74d7a6700e1'; // Sustituye con tu clave API
+
+// Función para obtener y mostrar el clima
+function getWeather(city) {
+    const weatherContainer = document.getElementById('weather-container');
+
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.main) {
+                const temperature = data.main.temp;
+                const weatherDescription = data.weather[0].description;
+                const weatherIcon = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+
+                weatherContainer.innerHTML = `
+                    <div class="weather-info">
+                        <img src="${weatherIcon}" alt="Weather Icon">
+                        <div>
+                            <div class="temperature">${temperature}°C</div>
+                            <div class="description">${weatherDescription}</div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                weatherContainer.innerHTML = 'No se pudo obtener el clima.';
+            }
+        })
+        .catch(error => {
+            weatherContainer.innerHTML = 'Error al cargar el clima.';
+            console.error(error);
+        });
+}
+
+// Llamar a la función pasando una ciudad por ejemplo
+getWeather('Concepción'); // Puedes cambiar a la ciudad que desees
+
+
+window.addEventListener('scroll', () => {
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach(card => {
+      if (card.getBoundingClientRect().top < window.innerHeight) {
+          card.classList.add('visible');
+      }
+  });
+});
