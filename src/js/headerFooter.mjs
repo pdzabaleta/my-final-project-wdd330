@@ -1,7 +1,7 @@
 import { loadTemplate, renderWithTemplate } from '../js/utils.js';
 import { searchProducts } from '../js/search.mjs';
 
-// Función para configurar el header con eventos y funcionalidades adicionales
+// Function to set up the header with events and additional functionalities
 async function setupHeader() {
   const logo = document.querySelector('.logo');
   const searchInput = document.querySelector('#search');
@@ -9,14 +9,13 @@ async function setupHeader() {
   const accountIcon = document.querySelector('.user');
   const cartIcon = document.querySelector('.cart i');
 
-
   if (logo) {
     logo.addEventListener('click', () => {
       window.location.href = '/index.html';
   });
   }
   if (searchInput) {
-    // Evento para búsqueda al presionar Enter
+    // Event for search when pressing Enter
     searchInput.addEventListener('keydown', async function (event) {
       if (event.key === 'Enter') {
         const query = event.target.value;
@@ -39,7 +38,7 @@ async function setupHeader() {
     console.error('Search input element not found');
   }
 
-  // Evento para búsqueda al hacer clic en el ícono
+  // Event for search when clicking the icon
   if (searchIcon) {
     searchIcon.addEventListener('click', () => {
       if (searchInput.value.trim() !== '') {
@@ -48,7 +47,7 @@ async function setupHeader() {
     });
   }
 
-  // Eventos para navegación (íconos de cuenta y carrito)
+  // Events for navigation (account and cart icons)
   if (accountIcon) {
     accountIcon.addEventListener('click', () => {
       window.location.href = '/pages/product-details.html';
@@ -63,7 +62,7 @@ async function setupHeader() {
   }
 }
 
-// Función principal para cargar header y footer
+// Main function to load header and footer
 export async function loadHeaderFooter() {
   const headerPath = await loadTemplate('/components/header.html');
   const footerPath = await loadTemplate('/components/footer.html');
@@ -82,6 +81,6 @@ export async function loadHeaderFooter() {
     console.error('Footer element not found');
   }
 
-  // Configura eventos después de cargar el header
+  // Set up events after loading the header
   await setupHeader();
 }

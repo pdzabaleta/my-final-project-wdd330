@@ -1,12 +1,12 @@
-// Normalizar cadenas para búsqueda insensible a mayúsculas y acentos
+// Normalize strings for case and accent insensitive search
 function normalizeString(str) {
     return str
         .toLowerCase()
-        .normalize("NFD") // Descompone caracteres acentuados
-        .replace(/[\u0300-\u036f]/g, ""); // Elimina marcas de acento
+        .normalize("NFD") 
+        .replace(/[\u0300-\u036f]/g, ""); 
 }
 
-// Función para medir similitud (distancia de Levenshtein)
+// Function to measure similarity (Levenshtein distance)
 function levenshteinDistance(a, b) {
     const dp = Array.from({ length: a.length + 1 }, (_, i) =>
         Array(b.length + 1).fill(i)
@@ -17,16 +17,16 @@ function levenshteinDistance(a, b) {
         for (let j = 1; j <= b.length; j++) {
             const cost = a[i - 1] === b[j - 1] ? 0 : 1;
             dp[i][j] = Math.min(
-                dp[i - 1][j] + 1, // Inserción
-                dp[i][j - 1] + 1, // Eliminación
-                dp[i - 1][j - 1] + cost // Sustitución
+                dp[i - 1][j] + 1, 
+                dp[i][j - 1] + 1, 
+                dp[i - 1][j - 1] + cost 
             );
         }
     }
     return dp[a.length][b.length];
 }
 
-// Función principal de búsqueda
+// Main search function
 export async function searchProducts(query, filePath = '/data/products.json') {
     try {
         const response = await fetch(filePath);
@@ -40,7 +40,7 @@ export async function searchProducts(query, filePath = '/data/products.json') {
             const normalizedName = normalizeString(product.name);
             const normalizedCategory = normalizeString(product.category);
 
-            // Coincidencias parciales o por similitud
+            // Partial or similarity matches
             const isPartialMatch =
                 normalizedName.includes(normalizedQuery) ||
                 normalizedCategory.includes(normalizedQuery);

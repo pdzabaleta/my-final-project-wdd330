@@ -1,9 +1,9 @@
-// Obtener categorías únicas
+// Get unique categories
 export function getUniqueCategories(products) {
     return [...new Set(products.map(product => product.category))];
 }
 
-// Renderizar categorías
+// Render categories
 export function renderCategories(categories, container, callback) {
     container.innerHTML = "<h2>Categories</h2>";
     categories.forEach(category => {
@@ -13,16 +13,16 @@ export function renderCategories(categories, container, callback) {
         categoryButton.addEventListener("click", () => callback(category));
         container.appendChild(categoryButton);
     });
-    container.style.display = "block"; // Asegura que las categorías sean visibles
+    container.style.display = "block"; // Ensures categories are visible
 }
 
-// Mostrar productos filtrados
+// Show filtered products
 export function showProductsByCategory(category, container, products) {
     const filteredProducts = products.filter(product => product.category === category);
     renderProducts(filteredProducts, container);
 }
 
-// Renderizar productos
+// Render products
 function renderProducts(products, container) {
     container.innerHTML = `
         <div id="products-list-title">
@@ -43,7 +43,7 @@ function renderProducts(products, container) {
         `;
         productsList.appendChild(productCard);
 
-        // Navegar a la página de detalles del producto
+        // Navigate to product details page
         productCard.querySelector(".product-details-button").addEventListener("click", () => {
             window.location.href = `product-details.html?id=${product.id}`;
         });

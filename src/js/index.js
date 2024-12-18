@@ -61,41 +61,52 @@ function renderProducts(products, container) {
     productsList.appendChild(productCard);
   });
 }
-const apiKey = 'fbd84acb3840d4382467a74d7a6700e1'; // Sustituye con tu clave API
+const apiKey = 'fbd84acb3840d4382467a74d7a6700e1'; // Replace with your API key
+const city = 'Concepción'; // You can change the city
+const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=en`;
 
-// Función para obtener y mostrar el clima
-function getWeather(city) {
-    const weatherContainer = document.getElementById('weather-container');
+fetch(weatherApiUrl)
+  .then(response => response.json())
+  .then(data => {
+    const cityName = data.name;
+    const description = data.weather[0].description;
+    const temperature = data.main.temp;
+    const humidity = data.main.humidity;
+    const windSpeed = data.wind.speed;
+    const iconCode = data.weather[0].icon;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
-        .then(response => response.json())
-        .then(data => {
-            if (data.main) {
-                const temperature = data.main.temp;
-                const weatherDescription = data.weather[0].description;
-                const weatherIcon = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    // Update the HTML elements
+    document.getElementById('city-name').textContent = cityName;
+    document.getElementById('weather-description').textContent = description;
+    document.getElementById('temperature').textContent = `${temperature}°C`;
+    document.getElementById('humidity').textContent = `Humidity: ${humidity}%`;
+    document.getElementById('wind-speed').textContent = `Wind: ${windSpeed} m/s`;
+    
+    // Change weather icon
+    document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${iconCode}.png`;
 
-                weatherContainer.innerHTML = `
-                    <div class="weather-info">
-                        <img src="${weatherIcon}" alt="Weather Icon">
-                        <div>
-                            <div class="temperature">${temperature}°C</div>
-                            <div class="description">${weatherDescription}</div>
-                        </div>
-                    </div>
-                `;
-            } else {
-                weatherContainer.innerHTML = 'No se pudo obtener el clima.';
-            }
-        })
-        .catch(error => {
-            weatherContainer.innerHTML = 'Error al cargar el clima.';
-            console.error(error);
+    // 3-day forecast
+    const forecastApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=en`;
+    fetch(forecastApiUrl)
+      .then(response => response.json())
+      .then(forecastData => {
+        let forecastHtml = '';
+        forecastData.list.slice(0, 3).forEach(forecast => {
+          const date = new Date(forecast.dt * 1000).toLocaleDateString();
+          const temp = forecast.main.temp;
+          const icon = forecast.weather[0].icon;
+          forecastHtml += `
+            <div>
+              <p>${date}</p>
+              <img src="https://openweathermap.org/img/wn/${icon}.png" alt="Weather icon">
+              <p>${temp}°C</p>
+            </div>
+          `;
         });
-}
-
-// Llamar a la función pasando una ciudad por ejemplo
-getWeather('Concepción'); // Puedes cambiar a la ciudad que desees
+        document.getElementById('forecast').innerHTML = forecastHtml;
+      });
+  })
+  .catch(error => console.error('Error fetching weather data:', error));
 
 
 window.addEventListener('scroll', () => {

@@ -1,6 +1,4 @@
-// Lógica específica de product-details.js aquí
 
-  // Función para cargar una plantilla desde un archivo
   export async function loadTemplate(path) {
     try {
       const response = await fetch(path);
@@ -13,8 +11,7 @@
     }
   }
 
-  // Función para obtener datos del archivo JSON
-// Función para obtener datos de productos desde un archivo JSON
+
 export async function fetchProductsData() {
   try {
     const response = await fetch('/data/products.json');
@@ -29,7 +26,7 @@ export async function fetchProductsData() {
 }
 
 
-  // Función para renderizar contenido con una plantilla
+
   export function renderWithTemplate(templateFn, parentElement, data, callback) {
     if (parentElement) {
       parentElement.insertAdjacentHTML("afterbegin", templateFn(data));

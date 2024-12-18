@@ -1,6 +1,6 @@
 import { loadHeaderFooter } from '/js/headerFooter.mjs';
 
-// Escucha el evento DOMContentLoaded
+// Listen to the DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', () => {
   // Load the header and footer
   loadHeaderFooter();
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Renderizar los productos en el carrito
+// Render the products in the cart
   cartItemsContainer.innerHTML = cart.map(item => `
     <div class="cart-item">
       <img src="${item.image}" alt="${item.name}">
@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   `).join('');
 
-  // Calcular y mostrar el precio total
+// Calculate and display the total price
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   totalPriceContainer.innerHTML = `<h2>Total: $${total.toFixed(2)}</h2> <a href="/index.html" id="continue-shopping-btn">Continue Shopping</a>`;
 
-  // Event listeners para los botones del carrito
+// Event listeners for the cart buttons
   cartItemsContainer.addEventListener('click', (e) => {
     const id = parseInt(e.target.dataset.id);
     if (e.target.classList.contains('cart-btn-increase')) {
@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Configurar el botón de PayPal
+// Configure the PayPal button
   paypal.Buttons({
     createOrder: function (data, actions) {
-      // Recalcular el total del carrito al momento de crear la orden
+      // Recalculate the cart total when creating the order
       const cart = JSON.parse(localStorage.getItem('cart')) || [];
       const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
@@ -64,25 +64,24 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     onApprove: function (data, actions) {
-      // Capturar el pago
+     // Capture payment
       return actions.order.capture().then(function (details) {
         alert('Transaction completed by ' + details.payer.name.given_name);
         console.log(details);
       });
     },
     onCancel: function (data) {
-      // Lógica cuando el usuario cancela el pago
+      // Logic when the user cancels the payment
       alert('Payment canceled!');
     },
     onError: function (err) {
-      // Manejo de errores
+      // Error handling
       console.error(err);
       alert('An error occurred during the transaction.');
-    }
-  }).render('#paypal-button-container'); // Renderizar el botón de PayPal
-});
+    },
+  }).render('#paypal-button-container'); 
 
-// Función para actualizar la cantidad de un producto
+// Function to update the quantity of a product
 function updateQuantity(id, change) {
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   const product = cart.find(item => item.id === id);
@@ -92,14 +91,14 @@ function updateQuantity(id, change) {
       cart = cart.filter(item => item.id !== id);
     }
     localStorage.setItem('cart', JSON.stringify(cart));
-    location.reload(); // Reload para reflejar los cambios
+    location.reload(); // Reload to reflect changes
   }
 }
-
-// Función para eliminar un producto del carrito
+// Function to remove a product from the cart
 function removeFromCart(id) {
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   cart = cart.filter(item => item.id !== id);
   localStorage.setItem('cart', JSON.stringify(cart));
-  location.reload(); // Reload para reflejar los cambios
+  location.reload(); // Reload to reflect changes
 }
+});
